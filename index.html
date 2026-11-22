@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Open Ear</title>
+<meta name="description" content="Share what you are dealing with, anonymously. Receive thoughtful advice, free.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="#" id="brand">Open Ear</a>
+    <nav>
+      <a href="#" id="navHome">Browse</a>
+      <a href="#new" class="btn small" id="navNew">Share something</a>
+      <button class="link" id="navAuth" hidden>Host sign in</button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="app" aria-live="polite"></main>
+
+<footer class="wrap foot">
+  <p>No accounts. No names. No IP addresses are stored. Advice here is one person's perspective, not professional care.</p>
+  <p class="crisis">If you are in immediate danger or thinking about ending your life, call or text <strong>988</strong> (US), or contact local emergency services.</p>
+</footer>
+
+<dialog id="loginDlg">
+  <form method="dialog" id="loginForm">
+    <h3>Host sign in</h3>
+    <input type="password" id="pw" placeholder="Password" autocomplete="current-password" required>
+    <p class="err" id="loginErr"></p>
+    <div class="row"><button type="button" class="btn ghost" id="loginCancel">Cancel</button><button class="btn">Sign in</button></div>
+  </form>
+</dialog>
+
+<script src="/app.js"></script>
+</body>
+</html>

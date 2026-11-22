@@ -1,0 +1,8 @@
+{
+  "name": "open-ear",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Anonymous advice board with a single host who replies.",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" }
+}
